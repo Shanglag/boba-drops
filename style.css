@@ -1,0 +1,18 @@
+img {
+    width: 200px;
+}
+
+html,
+body {
+    text-align: center;
+    font-family: 'Arial';
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(135deg, #ff0000, #b400b4, #842eae, #7f00dd, #5a00ef, #2000fd, #842eae, #b3309d, #cce302, #099844);
+    background-repeat: no-repeat;
+
+    p::first-line {
+        color: #099844;
+        font-weight: bolder;
+    }
+}
