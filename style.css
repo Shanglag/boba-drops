@@ -1,18 +1,65 @@
-img {
-    width: 200px;
-}
-
 html,
 body {
-    text-align: center;
-    font-family: 'Arial';
-    height: 100%;
-    margin: 0;
     background: linear-gradient(135deg, #ff0000, #b400b4, #842eae, #7f00dd, #5a00ef, #2000fd, #842eae, #b3309d, #cce302, #099844);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+}
 
-    p::first-line {
-        color: #099844;
-        font-weight: bolder;
+.bald-men {
+    border: 3px groove white;
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #842eae;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.header {
+    position: sticky;
+    text-align: center;
+    top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 80px;
+    background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: animatedText 5s infinite alternate-reverse;
+}
+
+@keyframes animatedText {
+    to {
+        background-position: 100%;
     }
+}
+
+.header-container {
+    border: groove black;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 20vw);
+    grid-gap: 50px;
 }
