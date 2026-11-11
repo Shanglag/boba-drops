@@ -9,7 +9,7 @@ body {
     width: 100px;
     height: 200px;
     object-fit: cover;
-    background-color: #842eae;
+    background-color: transparent;
 }
 
 .container {
